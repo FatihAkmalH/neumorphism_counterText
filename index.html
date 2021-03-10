@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Character</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h3>Character Counter</h3>
+        <textarea placeholder="Write the text here...." onkeyup="counterText()"></textarea>
+        <p>Total Character : <span class="counter">0</span></p>
+    </div>
+
+    <script>
+
+        const boxText = document.querySelector("textarea"),
+        counter = document.querySelector(".counter");
+
+        function counterText(){
+            const text = boxText.value;
+            const textLength = boxText.value.length;
+            counter.innerText = `${textLength}`;
+        }
+
+    </script>
+    
+</body>
+</html>
