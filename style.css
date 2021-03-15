@@ -44,8 +44,6 @@ body{
 ::placeholder{
     color: #161616;
     opacity: 70%;
-    /* padding-left: 10px;
-    padding-top: 5px; */
     font-weight: 500;
 }
 .container p{
